@@ -14,6 +14,7 @@ import "./App.css";
 // Default styles that can be overridden by your app
 import "@solana/wallet-adapter-react-ui/styles.css";
 import CounterState from "./components/counter-state";
+import IncrementButton from "./components/increment-button";
  
 function App() {
   // The network can be set to 'devnet', 'testnet', or 'mainnet-beta'.
@@ -36,6 +37,7 @@ function App() {
           <WalletMultiButton />
           <h1>Hello Solana</h1>
           <CounterState />
+          <IncrementButton />
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
